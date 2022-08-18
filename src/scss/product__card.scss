@@ -6,10 +6,12 @@
 .product__card-template {
   padding: 36px;
   row-gap: 32px;
+
   @media(max-width: 1039px) {
     row-gap: 24px;
     padding: 36px 12px;
   }
+
   @media(max-width: 748px) {
     padding: 24px 12px;
   }
@@ -18,6 +20,7 @@
 .product-card-img-container {
   grid-column: 1/ span 3;
   grid-row: 1/span 3;
+
   @media(max-width: 748px) {
     grid-row: 1/span 2;
     grid-column: 1/ span 4;
@@ -29,6 +32,7 @@
   flex-direction: column;
   grid-column: 4/ span 4;
   grid-row: 1/span 2;
+
   @media(max-width: 748px) {
     grid-row: 5/span 1;
     grid-column: 1/ span 12;
@@ -37,6 +41,7 @@
 
 .product__card-list-item:not(:last-child) {
   margin-bottom: 8px;
+
   @media(max-width: 748px) {
     margin-bottom: 12px;
   }
@@ -46,9 +51,11 @@
   display: flex;
   grid-column: 9/ span 4;
   justify-content: space-between;
+
   @media(max-width: 1039px) {
     grid-column: 8/ span 5;
   }
+
   @media(max-width: 748px) {
     flex-direction: column;
     grid-column: 5/ span 8;
@@ -60,35 +67,43 @@
 .product__card-btn {
   grid-row: 2/span 1;
   grid-column: 9/ span 4;
+
   @media(max-width: 1039px) {
     padding: 12px 25px;
   }
+
   @media(max-width: 748px) {
     grid-row: 3/span 1;
     grid-column: 1/ span 12;
   }
 }
+
 .product__current-price {
   @media(max-width: 748px) {
     margin-bottom: 8px;
   }
 }
+
 .current__bet-value {
   max-width: 144px;
+
   @media(max-width: 748px) {
     max-width: 100%;
     height: 51px;
     max-height: 51px;
   }
 }
+
 .current__price-title {
   @media(max-width: 1039px) {
     margin-bottom: 22px;
   }
+
   @media(max-width: 748px) {
     margin-bottom: 4px;
   }
 }
+
 .price__bet {
   display: flex;
   flex-direction: column;
@@ -101,6 +116,7 @@
 .product__bet-step {
   left: 7px;
   bottom: -7px;
+
   @media(max-width: 1039px) {
     bottom: -19px;
   }
@@ -111,10 +127,12 @@
   justify-content: space-between;
   grid-row: 3/span 1;
   grid-column: 4/ span 6;
+
   @media(max-width: 1039px) {
     grid-column: 1/ span 9;
     grid-row: 4/span 1;
   }
+
   @media(max-width: 748px) {
     grid-column: 1/ span 12;
     flex-wrap: wrap;
@@ -124,14 +142,17 @@
 .history__bet {
   grid-row: 4/span 1;
   grid-column: 1/ span 6;
+
   @media(max-width: 1039px) {
     grid-row: 5/span 1;
     grid-column: 1/ span 10;
   }
+
   @media(max-width: 748px) {
     grid-row: 6/span 1;
     grid-column: 1/ span 12;
   }
+
   &-title {
     font-weight: 600;
     font-size: 16px;
@@ -140,12 +161,14 @@
     display: inline-block;
   }
 
-  &-price{
+  &-price {
     text-align: end;
+
     @media(max-width: 1039px) {
       text-align: center;
     }
   }
+
   &-date {
     text-align: end;
   }
@@ -162,10 +185,12 @@
   grid-template-columns: 3fr 1fr 2fr;
   column-gap: 32px;
   margin-bottom: 24px;
+
   @media(max-width: 1039px) {
     column-gap: 16px;
     grid-template-columns: 3fr 2fr 2fr;
-  } 
+  }
+
   @media(max-width: 748px) {
     margin-bottom: 16px;
     grid-template-columns: 3fr 2fr 2fr;
@@ -181,6 +206,7 @@
 .history__bet-person {
   display: flex;
   justify-content: space-between;
+
   @media(max-width: 748px) {
     display: grid;
   }
@@ -205,6 +231,104 @@
   color: var(--primary-orange);
   margin-left: 8px;
 }
+
 .user-bet {
   color: var(--primary-orange);
+}
+
+//===========Оплата лота==========
+.lot__payment-important-block {
+  grid-column: 9/ span 4;
+  grid-row: 1/ span 1;
+  max-height: 60px;
+
+  @media(max-width: 1039px) {
+    grid-column: 8/ span 5;
+  }
+
+  @media(max-width: 748px) {
+    grid-column: 5/ span 8;
+    grid-row: 2/ span 1;
+    padding: 12px 12px;
+  }
+}
+
+.congratulations {
+  grid-column: 9/ span 4;
+  grid-row: 2/ span 1;
+  display: flex;
+  flex-direction: column;
+
+  @media(max-width: 1039px) {
+    grid-column: 8/ span 5;
+  }
+
+  @media(max-width: 748px) {
+    grid-row: 1/ span 1;
+    grid-column: 5/ span 8;
+  }
+}
+
+.congratulations span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  @media(max-width: 1039px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media(max-width: 748px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.congratulations span:first-child {
+  margin-bottom: 12px;
+  @media(max-width: 1039px) {
+    margin-bottom: 8px;
+  }
+}
+
+.lot__payment-action {
+  grid-column: 9/ span 4;
+  grid-row: 3/ span 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media(max-width: 1039px) {
+    grid-column: 8/ span 5;
+  }
+
+  @media(max-width: 748px) {
+    grid-column: 1/ span 12;
+  }
+}
+
+.lot__payment-info-bet {
+  grid-column: 4/ span 4;
+  grid-row: 3/ span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media(max-width: 1039px) {
+    grid-column: 1/ span 12;
+    grid-row: 4/ span 1;
+  }
+}
+
+.lot__payment-amount-bet {
+  display: flex;
+  flex-direction: column;
+}
+
+.lot__payment-btn {
+  padding: 13px 18px;
+  @media(max-width: 748px) {
+    padding: 13px 20px;
+  }
 }

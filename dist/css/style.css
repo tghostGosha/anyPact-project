@@ -245,7 +245,7 @@
 @media (max-width: 748px) {
   .primary-btn {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 21px;
   }
 }
 
@@ -1182,6 +1182,115 @@
 
 .user-bet {
   color: var(--primary-orange);
+}
+
+.lot__payment-important-block {
+  grid-column: 9/span 4;
+  grid-row: 1/span 1;
+  max-height: 60px;
+}
+@media (max-width: 1039px) {
+  .lot__payment-important-block {
+    grid-column: 8/span 5;
+  }
+}
+@media (max-width: 748px) {
+  .lot__payment-important-block {
+    grid-column: 5/span 8;
+    grid-row: 2/span 1;
+    padding: 12px 12px;
+  }
+}
+
+.congratulations {
+  grid-column: 9/span 4;
+  grid-row: 2/span 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1039px) {
+  .congratulations {
+    grid-column: 8/span 5;
+  }
+}
+@media (max-width: 748px) {
+  .congratulations {
+    grid-row: 1/span 1;
+    grid-column: 5/span 8;
+  }
+}
+
+.congratulations span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+@media (max-width: 1039px) {
+  .congratulations span {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 748px) {
+  .congratulations span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.congratulations span:first-child {
+  margin-bottom: 12px;
+}
+@media (max-width: 1039px) {
+  .congratulations span:first-child {
+    margin-bottom: 8px;
+  }
+}
+
+.lot__payment-action {
+  grid-column: 9/span 4;
+  grid-row: 3/span 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1039px) {
+  .lot__payment-action {
+    grid-column: 8/span 5;
+  }
+}
+@media (max-width: 748px) {
+  .lot__payment-action {
+    grid-column: 1/span 12;
+  }
+}
+
+.lot__payment-info-bet {
+  grid-column: 4/span 4;
+  grid-row: 3/span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1039px) {
+  .lot__payment-info-bet {
+    grid-column: 1/span 12;
+    grid-row: 4/span 1;
+  }
+}
+
+.lot__payment-amount-bet {
+  display: flex;
+  flex-direction: column;
+}
+
+.lot__payment-btn {
+  padding: 13px 18px;
+}
+@media (max-width: 748px) {
+  .lot__payment-btn {
+    padding: 13px 20px;
+  }
 }
 
 :root {
