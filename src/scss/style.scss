@@ -20,12 +20,15 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "fonts";
 @import "type-of-auction.scss";
 @import "price__increase.scss";
+
+@import "modal.scss";
 @import "product__card.scss";
-
-
+@import "my-pacts__new.scss";
+@import "new-auction.scss";
 :root {
   --primary-orange: #FF6600;
   --secondary-orange: #FF812D; 
@@ -2415,7 +2418,9 @@ table.detail_contract td {
 .cardPact p {
   margin-bottom: 26px;
 }
-
+.d-md-table-row {
+  display:flex;
+}
 .cardPact .cardPact-price {
   margin-top: 10px;
   display: block;

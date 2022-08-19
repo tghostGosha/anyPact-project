@@ -1,0 +1,162 @@
+<!-- <link href="css/new-pact.css" type="text/css" rel="stylesheet">
+<link href="//anypact.ru/local/templates/anypact/module/trumbowyg/dist/ui/trumbowyg.min.css" type="text/css"
+  rel="stylesheet">
+<link href="//anypact.ru/local/templates/anypact/module/selectize/selectize.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript"
+  src="//api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=08f051a6-35f1-4392-a988-5024961ee1a8"></script>
+<script type="text/javascript"
+  src="//anypact.ru/local/templates/anypact/module/trumbowyg/dist/trumbowyg.min.js"></script>
+<script type="text/javascript" src="//anypact.ru/local/templates/anypact/module/selectize/selectize.min.js"></script>
+<script type="text/javascript" src="js/new-pact.js"></script> -->
+<div class="container">
+  <h1 class="new-style-title-h1">Выберите тип аукциона</h1>
+  <div class="new-auction-container">
+    <form id="newAuction">
+      <div class="mb-48">
+        <h3 class="mb-16">Выберите тип аукциона</h3>
+        <div class="form-check form-switch" style="margin-bottom: 20px;">
+          <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Аукцион на повышение цены</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="">
+          <label class="form-check-label" for="flexSwitchCheckChecked">Аукцион на понижение цены</label>
+        </div>
+      </div>
+      <div class="mb-48">
+        <h3 class="mb-16">Выберите настройки приватности</h3>
+        <div class="form-check form-switch" style="margin-bottom: 20px;">
+          <input class="form-check-input" type="checkbox" role="switch" id="">
+          <label class="form-check-label" for="flexSwitchCheckChecked">Публичный аукцион</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Анонимный аукцион</label>
+        </div>
+      </div>
+      <div class="mb-48">
+        <h3 class="mb-16">Название</h3>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">(введите название аукциона или товара)</label>
+          <input type="text" class="form-control new-auction__input" id="" placeholder="">
+        </div>
+      </div>
+      <div class="mb-48">
+        <h3 class="mb-16">Фотографии</h3>
+        <label for="exampleFormControlInput1" class="form-label">(не более 20)</label>
+        <div class="input__wrapper new-auction__input">
+          <input name="file" type="file" id="inputFile" class="input__file" multiple>
+          <label for="inputFile" class="input__file-button">
+            <span class="input__file-icon-wrapper">
+              <svg width="72px" height="72px" class="svg-input-file-dims">
+                <use xlink:href="../image/icons/icons.svg#input-file"></use>
+              </svg>
+            </span>
+
+          </label>
+        </div>
+      </div>
+      <div class="mb-48">
+        <h3 class="mb-16">Управление ценой</h3>
+        <div class="form-check form-switch" style="margin-bottom: 20px;">
+          <input class="form-check-input" type="checkbox" role="switch" id="" checked>
+          <label class="form-check-label" for="flexSwitchCheckChecked">Автоматическое понижение цены</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="">
+          <label class="form-check-label" for="flexSwitchCheckChecked">Ручное управление ценой</label>
+        </div>
+      </div>
+      <div class="price-wrapper">
+        <div class="start-price">
+          <h3 class="mb-16">Стартовая сумма</h3>
+          <div class="mb-3 form-price-control">
+            <label class="form-price-label" for="startPrice">руб</label>
+            <input type="text" class="form-control new-auction__input" id="startPrice" placeholder="">
+          </div>
+        </div>
+        <div class="step-up">
+          <h3 class="mb-16">Шаг повышения цены</h3>
+          <div class="mb-3">
+            <label class="form-price-label" for="stepUp">руб</label>
+            <input type="text" class="form-control new-auction__input" id="stepUp" placeholder="">
+          </div> 
+        </div>
+        <div class="step-down">
+          <h3 class="mb-16">Шаг понижения цены</h3>
+          <div class="mb-3">
+            <label class="form-price-label" for="stepDown">руб</label>
+            <input type="text" class="form-control new-auction__input" id="stepDown" placeholder="">
+          </div> 
+        </div>
+        <div class="price-reduction-timer">
+          <h3 class="mb-16">Таймер понижения цены</h3>
+          <label for="priceReductionTimer" class="form-label">(день, час, минута)</label>
+          <div class="mb-3">
+            <input type="text" class="form-control new-auction__input" id="priceReductionTimer" placeholder="">
+          </div> 
+        </div>
+        
+        <div class="day-start">
+          <h3 class="mb-16">Дата начала аукциона</h3>
+          <div class="new-auction__input date-wrapper">
+            <input type="date" id="date" name="date"
+            value="2018-07-22"
+            min="2022-09-01" max="2018-12-31" class="input__file">
+            <label for="date" class="input__date-button">
+              <span class="input__date-icon-wrapper">
+                <svg width="24px" height="22px" class="svg-calendar-dims">
+                  <use xlink:href="../image/icons/icons.svg#calendar"></use>
+                </svg>
+              </span>
+  
+            </label>
+          </div>
+        </div>
+        <div class="time-start">
+          <h3 class="mb-16">Время начала аукциона</h3>
+          <div class="mb-3">
+            <label class="form-price-label" for="timeStart">руб</label>
+            <input type="text" class="form-control new-auction__input" id="timeStart" placeholder="">
+          </div> 
+        </div>
+        <div class="day-end">
+          <h3 class="mb-16">Дата окончания аукциона</h3>
+          <div class="new-auction__input date-wrapper">
+            <input type="date" id="dateEnd" name="date"
+            value="2018-07-22"
+            min="2022-09-01" max="2018-12-31" class="input__file">
+            <label for="dateEnd" class="input__date-button">
+              <span class="input__date-icon-wrapper">
+                <svg width="24px" height="22px" class="svg-calendar-dims">
+                  <use xlink:href="../image/icons/icons.svg#calendar"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="time-end">
+          <h3 class="mb-16">Время окончания аукциона</h3>
+          <div class="mb-3">
+            <label class="form-price-label" for="timeEnd">руб</label>
+            <input type="text" class="form-control new-auction__input" id="timeEnd" placeholder="">
+          </div> 
+        </div>
+      </div>
+      <div class="mb-48">
+        <h3 class="mb-16">Описание</h3>
+        <label class="" for="descriptionProduct">(добавьте краткое описание предмета аукциона в произвольной форме)</label>
+        <div class="form-check form-switch">
+          <textarea class="" cols="30" rows="10"  name="descriptionProduct" id="descriptionProduct"></textarea>
+          
+        </div>
+        
+      </div>
+    </form>
+  </div>
+
+
+  <!--//-->
+  <!--//Созданные или подписанные пользователем документы-->
+</div>

@@ -1,0 +1,71 @@
+.copy_text {
+    position: absolute;
+    bottom: -60px;
+    right: -130px;
+    width: 280px;
+    max-width: 280px;
+    -webkit-box-shadow: 0 0 10px 5px #00000030;
+    box-shadow: 0 0 10px 5px #00000030;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #8e8e8e;
+    font-size: 14px;
+    background-color: #ffffff;
+    display: none;
+    z-index: 1;
+}
+
+.social_tools_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.copy_block {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.link_share {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FF6600;
+}
+
+.link_share .ico {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    background: url(../image/chain-links.svg) no-repeat;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.title-table {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+}
