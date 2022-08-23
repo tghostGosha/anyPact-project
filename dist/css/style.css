@@ -12632,6 +12632,17 @@ textarea.form-control-lg {
   column-gap: 48px;
   row-gap: 48px;
 }
+@media (max-width: 1083px) {
+  .price-wrapper {
+    column-gap: 16px;
+  }
+}
+@media (max-width: 723px) {
+  .price-wrapper {
+    row-gap: 24px;
+    max-width: 352px;
+  }
+}
 
 .form-price-control {
   position: relative;
@@ -12649,29 +12660,78 @@ textarea.form-control-lg {
   line-height: 28px;
 }
 
-.step-down {
+@media (max-width: 723px) {
+  .start-price {
+    grid-row: 1/span 1;
+    grid-column: 1/span 2;
+  }
+}
+
+.step-up {
   display: none;
+}
+
+.step-down,
+.step-up {
   grid-column: 2/span 1;
+}
+@media (max-width: 723px) {
+  .step-down,
+.step-up {
+    grid-row: 2/span 1;
+    grid-column: 1/span 2;
+  }
+}
+
+@media (max-width: 723px) {
+  .price-reduction-timer {
+    grid-row: 3/span 1;
+    grid-column: 1/span 2;
+  }
 }
 
 .day-start {
   grid-column: 1/span 1;
   grid-row: 3/span 1;
 }
+@media (max-width: 723px) {
+  .day-start {
+    grid-row: 4/span 1;
+    grid-column: 1/span 2;
+  }
+}
 
 .time-start {
   grid-column: 2/span 1;
   grid-row: 3/span 1;
+}
+@media (max-width: 723px) {
+  .time-start {
+    grid-row: 5/span 1;
+    grid-column: 1/span 2;
+  }
 }
 
 .day-end {
   grid-column: 1/span 1;
   grid-row: 4/span 1;
 }
+@media (max-width: 723px) {
+  .day-end {
+    grid-row: 6/span 1;
+    grid-column: 1/span 2;
+  }
+}
 
 .time-end {
   grid-column: 2/span 1;
   grid-row: 4/span 1;
+}
+@media (max-width: 723px) {
+  .time-end {
+    grid-row: 7/span 1;
+    grid-column: 1/span 2;
+  }
 }
 
 .date-wrapper {
@@ -12692,6 +12752,61 @@ textarea.form-control-lg {
 
 .svg-calendar-dims {
   color: #6B6D70;
+}
+
+.save-btn {
+  padding: 12px 32px;
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+@media (max-width: 723px) {
+  .save-btn {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 38px;
+    width: 168px;
+  }
+}
+
+.publish-btn {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+@media (max-width: 723px) {
+  .publish-btn {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 12px 24px;
+    max-width: 168px;
+  }
+}
+
+.buttons__send-form {
+  display: flex;
+}
+@media (max-width: 723px) {
+  .buttons__send-form {
+    justify-content: space-between;
+  }
+}
+
+.new-auction-important-block {
+  display: none;
+  grid-column: 1/span 2;
+  grid-row: 2/span 1;
+  background-color: #F3F3F3;
+}
+
+.active {
+  display: flex;
+}
+
+.disable {
+  display: none;
 }
 
 :root {
